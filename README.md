@@ -1,14 +1,14 @@
-# Nerfies
+# Are Checklists Really Useful for Automatic Evaluation of Generative Tasks?
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository that contains source code for the [checklist-effectiveness-study](https://github.com/momo0817/checklist-effectiveness-study/tree/main).
 
-If you find Nerfies useful for your work please cite:
+If you find checklist-effectiveness-study useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@article{furuhashi-2025-checklist-effectiveness-study
+  author    = {Momoka Furuhashi, Kouta Nakayama, Takashi Kodama, and Saku Sugawara},
+  title     = {Are Checklists Really Useful for Automatic Evaluation of Generative Tasks?},
+  journal   = {arXiv [cs.CL]},
+  year      = {2025},
 }
 ```
 
