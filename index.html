@@ -350,7 +350,12 @@
             <p class="is-size-4" style="margin-bottom: 10px;">💡 <strong>Evaluation Responses</strong></p>
             <p class="is-size-5" style="margin-left: 20px; margin-bottom: 20px;">
               We evaluate a total of <strong>eight</strong> models, including gpt-4o-2024-08-06 and Qwen2.5-7B-Instruct, to investigate which checklist items contribute to alignment with human evaluation.
-            </p>
+            </p><br>
+           <p class="is-size-5" style="margin-left: 20px; margin-bottom: 20px;">
+            We chose two tasks (pairwise comparison and direct scoring) and use 
+            <a href="https://github.com/princeton-nlp/LLMBar/tree/main" target="_blank">LLMBar</a> and 
+            <a href="https://github.com/qinyiwei/InfoBench" target="_blank">InFoBench</a>.
+          </p>
         </div>
               
 
@@ -364,7 +369,10 @@
 
               <p class="is-size-4" style="margin-bottom: 10px;">📊 <strong>Ablation Study on Correlation with Human Evaluation</strong></p>
               <p class="is-size-5" style="margin-left: 20px; margin-bottom: 20px;">
-              To identify which checklist items contribute to alignment with human evaluation, we perform an ablation analysis, revealing both impactful  <em>(positive, negative)</em> and non-impactful  <em>(neither)</em> items.<br><br></p>
+              To identify which checklist items contribute to alignment with human evaluation, we perform an ablation analysis, revealing both impactful  <em>(positive, negative)</em> and non-impactful  <em>(neither)</em> items.<br><br></p><br>
+              <p class="is-size-5" style="margin-left: 20px; margin-bottom: 20px;">
+              ✅ In the LLMBar,  <strong><em>53.5%</em></strong> of the checklists used in <em>positive checklists</em>  are classified as <em>positive checklist items</em> (1,079 out of 2,018), while  <strong><em>42.0%</em></strong> of the items in <em>negative checklists</em> are classified as <em>negative checklist items</em> (3,847 out of 9,157). <br>
+              ✅ In the InFoBench,  all items in <em>positive checklists</em>  are classified as <em>positive checklist items</em> (56 out of 56), while  <strong><em>40.7%</em></strong> of the items in <em>negative checklists</em> are classified  as <em>negative</em> (599 out of 1,472). </p>
               <div class="has-text-centered" style="margin-bottom: 30px;">
                 <img src="./static/images/ablation_result.svg" alt="Ablation Study Figure" class="responsive-image architecture-image">
               </div>
@@ -372,6 +380,8 @@
               <p class="is-size-4" style="margin-bottom: 10px;">📊 <strong>Analysis of Questions in the Dataset</strong></p>
               <p class="is-size-5" style="margin-left: 20px; margin-bottom: 20px;">
               We investigate how checklist effectiveness depends on question type <em>(closed vs. open)</em>.<br><br></p>
+              <p class="is-size-5" style="margin-left: 20px; margin-bottom: 20px;">
+              ✅ We find that LLMBar questions are sampled as <strong>10%</strong> from each of the eight subsets (85 in total), while <strong>all 50 questions</strong> from the InFoBench are classified.
                <div class="has-text-centered" style="margin-bottom: 30px;">
                 <img src="./static/images/question_type.png" alt="Ablation Study Figure" 
                     style="max-width: 100%; height: auto;" class="architecture-image">
@@ -381,7 +391,10 @@
               <p class="is-size-4" style="margin-bottom: 10px;">📊 <strong>Comparison with Human-Written Checklists</strong></p>
               <p class="is-size-5" style="margin-left: 20px; margin-bottom: 20px;">
               We compare LLM-generated checklists with those created by human annotators, analyzing overlaps and divergences in checklists.<br><br></p>
-
+              <p class="is-size-5" style="margin-left: 20px; margin-bottom: 20px;">
+              We qualitatively analyze 293 items, including 89 <em>positive</em> and 102 <em>negative</em> items.<br>
+              ✅ For <em>positive</em> items, <strong>60%</strong> are explicitly reflect key question elements, aligning with essential response components.<br>
+              ✅ For <em>negative</em> items, <strong>85%</strong> are consistent and deemed usable upon manual review.
 
             </p>
 
